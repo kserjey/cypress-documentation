@@ -29,41 +29,6 @@ If you're using `npm` to install Cypress, we support:
 
 - **Node.js** 12 or 14 and above
 
-#### Linux
-
-If you're using Linux, you'll want to have the required dependencies installed
-on your system.
-
-#### Ubuntu/Debian
-
-```shell
-apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
-```
-
-#### CentOS
-
-```shell
-yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2 nss libXScrnSaver alsa-lib
-```
-
-#### Docker
-
-Docker images with all of the required dependencies installed are available
-under [cypress/base](https://github.com/cypress-io/cypress-docker-images)
-
-If you're running your projects in containers, then you'll want Cypress in the
-container with the Node.js process.
-
-```
-  ui:
-    image: cypress/base:latest
-    # if targeting a specific node version, use e.g.
-    # image: cypress/base:14
-```
-
-`cypress/base` is a drop-in replacement for
-[base docker node images](https://hub.docker.com/_/node/).
-
 ## Installing
 
 ### <Icon name="terminal"></Icon> `npm install`
@@ -132,6 +97,41 @@ yarn add cypress --dev
 
 System proxy properties `http_proxy`, `https_proxy` and `no_proxy` are respected
 for the download of the Cypress binary.
+
+#### Linux
+
+If you're using Linux, you'll want to have the required dependencies installed
+on your system.
+
+#### Ubuntu/Debian
+
+```shell
+apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+```
+
+#### CentOS
+
+```shell
+yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2 nss libXScrnSaver alsa-lib
+```
+
+#### Docker
+
+Docker images with all of the required dependencies installed are available
+under [cypress/base](https://github.com/cypress-io/cypress-docker-images)
+
+If you're running your projects in containers, then you'll want Cypress in the
+container with the Node.js process.
+
+```
+  ui:
+    image: cypress/base:latest
+    # if targeting a specific node version, use e.g.
+    # image: cypress/base:14
+```
+
+`cypress/base` is a drop-in replacement for
+[base docker node images](https://hub.docker.com/_/node/).
 
 ### <Icon name="download"></Icon> Direct download
 
