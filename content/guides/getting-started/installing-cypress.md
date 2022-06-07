@@ -12,22 +12,8 @@ title: Installing Cypress
 
 </Alert>
 
-## System requirements
-
-#### Operating System
-
-Cypress is a desktop application that is installed on your computer. The desktop
-application supports these operating systems:
-
-- **macOS** 10.9 and above _(64-bit only)_
-- **Linux** Ubuntu 12.04 and above, Fedora 21 and Debian 8 _(64-bit only)_
-- **Windows** 7 and above _(64-bit only)_
-
-#### Node.js
-
-If you're using `npm` to install Cypress, we support:
-
-- **Node.js** 12 or 14 and above
+First, make sure you have all the [system requirements](#System-requirements),
+and then...
 
 ## Installing
 
@@ -179,6 +165,29 @@ help installing Cypress in CI. When running in Linux you'll need to install some
 [system dependencies](/guides/continuous-integration/introduction#Dependencies)
 or you can use our [Docker images](/examples/examples/docker) which have
 everything you need prebuilt.
+
+## System requirements
+
+<Alert type="info">
+
+#### Operating System
+
+Cypress is a desktop application that is installed on your computer. The desktop
+application supports these operating systems:
+
+- **macOS** 10.9 and above _(64-bit only)_
+- **Linux** Ubuntu 12.04 and above, Fedora 21 and Debian 8 _(64-bit only)_
+- **Windows** 7 and above _(64-bit only)_
+
+#### Node.js
+
+If you're using `npm` to install Cypress, we support:
+
+- **Node.js** 12 or 14 and above
+
+Great, now [install Cypress](#Installing)!
+
+</Alert>
 
 ## Next Steps
 
